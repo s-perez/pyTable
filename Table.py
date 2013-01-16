@@ -24,7 +24,7 @@ class Table():
             self.lexems[lex] = ''
             return self.getPos(lex)
         else:
-            return False
+            return self.getPos(lex)
 
     def setType(self, lex, type):
         """Sets the type of lex.
@@ -73,4 +73,4 @@ class Table():
                 break
             else:
                 i = i + 1
-        return i if i == len(self.lexems) else False
+        return False if i == len(self.lexems) else i
